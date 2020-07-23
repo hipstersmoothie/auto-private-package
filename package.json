@@ -1,0 +1,17 @@
+{
+  "name": "auto-private-package",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "author": "Andrew Lisowski <lisowski54@gmail.com>",
+  "repository": "hipstersmoothie/auto-private-package",
+  "scripts": {
+    "release": "auto shipit"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "auto": "^9.47.2"
+  }
+}
