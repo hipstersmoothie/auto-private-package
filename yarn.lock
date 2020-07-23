@@ -2,17 +2,34 @@
 # yarn lockfile v1
 
 
-"@auto-it/bot-list@^9.47.2":
-  version "9.47.2"
-  resolved "https://registry.yarnpkg.com/@auto-it/bot-list/-/bot-list-9.47.2.tgz#2ba70bcb6462b5a1ffd8ab06d8c3b6bdf0a46ff9"
-  integrity sha512-IDmdwNslrAQwq1PHkT8DD7Weva7vXStEjDRnDRmUH2T42VyxqEc1cfdvKYhj7Fumr1jqCCqV1zq/92VoVjJd6g==
-
-"@auto-it/core@^9.47.2":
-  version "9.47.2"
-  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-9.47.2.tgz#0131ae73b139dcbe158490a112862b0324ccf08b"
-  integrity sha512-mNkNrS65VWgdQnE6eB3vcTnTVwyCK6Ir/lMXIRYnX2EcrUuQXaJqguS1bS5vyODtJhsUsBeyDWFU5l4m3rIE2g==
+"@auto-canary/auto@9.47.3-canary.1397.17547.0":
+  version "9.47.3-canary.1397.17547.0"
+  resolved "https://registry.yarnpkg.com/@auto-canary/auto/-/auto-9.47.3-canary.1397.17547.0.tgz#774b7ae6882a81765b06d10d484bca20da35d8c5"
+  integrity sha512-/uGYoKNAi24nRD0dP63Qjmzt+dzfoXEKYJfAodVv6PHa31S3pUlgSC64EciUYwffqbQGCpXnQ2tNNC4RdRrnBA==
   dependencies:
-    "@auto-it/bot-list" "^9.47.2"
+    "@auto-canary/core" "9.47.3-canary.1397.17547.0"
+    "@auto-canary/npm" "9.47.3-canary.1397.17547.0"
+    "@auto-canary/released" "9.47.3-canary.1397.17547.0"
+    await-to-js "^2.1.1"
+    chalk "^4.0.0"
+    command-line-application "^0.10.1"
+    endent "^2.0.1"
+    module-alias "^2.2.2"
+    signale "^1.4.0"
+    terminal-link "^2.1.1"
+    tslib "2.0.0"
+
+"@auto-canary/bot-list@9.47.3-canary.1397.17547.0":
+  version "9.47.3-canary.1397.17547.0"
+  resolved "https://registry.yarnpkg.com/@auto-canary/bot-list/-/bot-list-9.47.3-canary.1397.17547.0.tgz#2852ad7ea0ab1a829667e32dfeae76ffa5301751"
+  integrity sha512-X6a6+WW0c6c86ZPCvzaSZSoOjMSQjJ8AAi0cYLzDjxNOeQEjsg6B+uWjQzu+6nPd2PQHCn84Dk7IyfhdY4iUVw==
+
+"@auto-canary/core@9.47.3-canary.1397.17547.0":
+  version "9.47.3-canary.1397.17547.0"
+  resolved "https://registry.yarnpkg.com/@auto-canary/core/-/core-9.47.3-canary.1397.17547.0.tgz#b657bf23dce84dd28cb9d489d6e402f78ef1ec8b"
+  integrity sha512-oauk47fg888q9MTpKxlCDxGGhabdOzpk/4UJzSRAr3Cj81C/o9U4kUZ1wcrg8VvyJNH8tavnUJqlCEfCqIo7MQ==
+  dependencies:
+    "@auto-canary/bot-list" "9.47.3-canary.1397.17547.0"
     "@octokit/graphql" "^4.4.0"
     "@octokit/plugin-enterprise-compatibility" "^1.2.2"
     "@octokit/plugin-retry" "^3.0.1"
@@ -48,12 +65,12 @@
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
 
-"@auto-it/npm@^9.47.2":
-  version "9.47.2"
-  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-9.47.2.tgz#feb397b23bd2d5c5071ff4130e564678f4c277d7"
-  integrity sha512-iHCZ4T08cnUEWFQEaPrjaxLHpSGcGqH0jY4tXZx+Dm0tH5rC0chrw56xtPa8Pz8b7cbYA514KlhXO6ZBIJo+Pw==
+"@auto-canary/npm@9.47.3-canary.1397.17547.0":
+  version "9.47.3-canary.1397.17547.0"
+  resolved "https://registry.yarnpkg.com/@auto-canary/npm/-/npm-9.47.3-canary.1397.17547.0.tgz#1b44ff2dac3e9c24f352fcc7f9d8792131940897"
+  integrity sha512-6n9lEeKf/fOdyg0sMJLq+Ql+pGJkmj+PDgLo1Yo3hbtMztYnpMPv688g5lu9dcVdNw0uRU8DzFuYNcAsndoEnQ==
   dependencies:
-    "@auto-it/core" "^9.47.2"
+    "@auto-canary/core" "9.47.3-canary.1397.17547.0"
     await-to-js "^2.1.1"
     env-ci "^5.0.1"
     fp-ts "^2.5.3"
@@ -68,12 +85,12 @@
     url-join "^4.0.0"
     user-home "^2.0.0"
 
-"@auto-it/released@^9.47.2":
-  version "9.47.2"
-  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-9.47.2.tgz#a617a788cacf2386c92ed516ac532cf22ecde202"
-  integrity sha512-ptjtj2Rqd1/SgWFsvAyt7F7OsNjpmyj1t4NLLHHvxXCXEHwG7qsJdRimKNjGyNBrPT2klWuXu09fdrgZIBMZGA==
+"@auto-canary/released@9.47.3-canary.1397.17547.0":
+  version "9.47.3-canary.1397.17547.0"
+  resolved "https://registry.yarnpkg.com/@auto-canary/released/-/released-9.47.3-canary.1397.17547.0.tgz#e1824a55949606c9d50a38b1219fd9252235428b"
+  integrity sha512-OMubRb+zjc+/uQoscdnJ6JqYB5+42v4f7tLXyeOlii9pN0tnPlHiS3lfayf7o4TNwqzfvGIylYWWCASIMR3zMw==
   dependencies:
-    "@auto-it/core" "^9.47.2"
+    "@auto-canary/core" "9.47.3-canary.1397.17547.0"
     deepmerge "^4.0.0"
     fp-ts "^2.5.3"
     io-ts "^2.1.2"
@@ -327,23 +344,6 @@ author-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/author-regex/-/author-regex-1.0.0.tgz#d08885be6b9bbf9439fe087c76287245f0a81450"
   integrity sha1-0IiFvmubv5Q5/gh8dihyRfCoFFA=
-
-auto@^9.47.2:
-  version "9.47.2"
-  resolved "https://registry.yarnpkg.com/auto/-/auto-9.47.2.tgz#1c57bb6abec86b0466b8808afe7023539f52599d"
-  integrity sha512-2FDAmPy3jdfDjeqNE811YBomwLTM3aNjlkNYvANMk0S4L2WOVRWYytdo8JIbX7pHB4+MA8I22K099jA4J8cPbg==
-  dependencies:
-    "@auto-it/core" "^9.47.2"
-    "@auto-it/npm" "^9.47.2"
-    "@auto-it/released" "^9.47.2"
-    await-to-js "^2.1.1"
-    chalk "^4.0.0"
-    command-line-application "^0.10.1"
-    endent "^2.0.1"
-    module-alias "^2.2.2"
-    signale "^1.4.0"
-    terminal-link "^2.1.1"
-    tslib "2.0.0"
 
 await-to-js@^2.1.1:
   version "2.1.1"
